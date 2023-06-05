@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyería</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link estilos-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+    <div class="main">
+
+        <header>>
+            <nav class="navegacion">
+                <button id="nav-btn">
+                    <img src="https://img.icons8.com/ios/50/000000/menu.png" alt="menu">
+                </button>
+                <ul>
+                    <li ><a href="#">Inicio</a></li>
+                    <li><a  href="#">Pulseras</a></li>
+                    <li><a href="#">Pendientes</a></li>
+                    <li><a href="#"><img src="img/usuario.png">  Sesión</img></a>
+                
+                    </li>
+                </ul>
+            </nav>
+
+        <section id="seccion1">
+
+        </section>
+        <div class="titulo1">
+            <p>
+                <strong>Nuestras Colecciones</strong>
+            </p>
+ 
+        </div>
+        <div class="contenedor">
+
+            <div class="imagenes">
+                <a>Huggies</a>
+                <p>lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <a href="#"><img src="img/foto4.jpg" /></a>
+            </div>
+            <div class="imagenes">
+                <a href="#">Collares</a>
+                <p>lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <a href="#"><img src="img/foto9.jpeg" /></a>
+            </div>
+            <div class="imagenes">
+                <a>Piercings</a>
+                <p>lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <a href="#"> <img src="img/foto8.jpg" /></a>
+            </div>
+        </div>
+
+        <div class="seccion3">
+            <p>
+                <strong>Los más </strong>
+            </p>
+            <h1> VENDIDOS</h1>
+            <div class="seccion3-2">
+                <div class="seccion3-1">
+                    <img src="img/foto11.jpg" />
+                    <a href="#">Pendientes</a>
+                </div>
+                <div class="seccion3-1">
+                    <img src="img/foto12.jpg" />
+                    <a href="#">Esclavas de pareja</a>
+                </div>
+                <div class="seccion3-1">
+                    <img src="img/foto13.jpg" />
+                    <a href="#">Collares</a>
+                </div>
+                <div class="seccion3-1">
+                    <img src="img/foto14.jpg" />
+                    <a href="#">Collares</a>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <p>Copyright © 2023 Joyería Luna All rights reserved</p>
+        </footer>
+    </div>
+
+    <script>
+        const navBtn = document.getElementById("nav-btn");
+        const nav = document.querySelector(".navegacion");
+
+        navBtn.addEventListener("click", () => {
+            nav.classList.toggle("navegacion--activa");
+        });
+    </script>
+</body>
+
+</html>
