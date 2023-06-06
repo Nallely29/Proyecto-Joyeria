@@ -177,14 +177,13 @@ h2{
     font-size: 1em;
     font-weight: 600;
 }
-.grupo a{
 
-  margin: 15px 25px;
-  color: #c36c6c;
-  font-size: 1em;
-}
 a{
   color: #c36c6c;
+}
+ a:hover {
+  color: #adabab;
+  font-size: 15px;
 }
 footer{
   padding:1em 15%;
