@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyería</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link estilos-->
+    <link rel="stylesheet" href="../css/sesion.css">
+
+</head>
+
+<body>
+    <div class="main">
+
+        <header>>
+            <nav class="navegacion">
+                <button id="nav-btn">
+                    <img src="https://img.icons8.com/ios/50/000000/menu.png" alt="menu">
+                </button>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Pulseras</a></li>
+                    <li><a href="#">Pendientes</a></li>
+                    <li><a href="../index.html"><img src="../img/usuario.png"> Sesión</img></a>
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contenedor">
+            <div class="form-box">
+                <div class="Inicio-F">
+                    <form action="">
+                        <h2>Inicio de Sesión</h2>
+                        
+                        <div class="grupo">
+                            <input type="text" class="input-form"   placeholder=" " required>
+                            <label  class="label-form" for="email">Email</label>
+                        </div>    
+                  
+                        <div class="grupo">
+                            <input  class="input-form" type="contrasena" placeholder=" " required>
+                            <label class="label-form" for="Password">Password</label>
+                        </div>
+                        <div class="grupo">
+
+                        </div>           
+                        <button class="boton-inicio">Iniciar sesión</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright © 2023 Joyería Luna All rights reserved</p>
+        </footer>       
+    </div>
+    <script>
+        const navBtn = document.getElementById("nav-btn");
+        const nav = document.querySelector(".navegacion");
+
+        navBtn.addEventListener("click", () => {
+            nav.classList.toggle("navegacion--activa");
+        });
+    </script>
+</body>
+
+</html>
