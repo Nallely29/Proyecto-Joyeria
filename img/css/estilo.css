@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+div {
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main
+{margin: 7px;}
+
+/* navigation */
+.navegacion {
+  background-color:#fff;
+  padding: 1rem 15%;
+  position:fixed;
+  font-family: "Lucida console";
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 4px 4px #f5ccd3;;
+}
+.navegacion a {
+  padding: 0 1.5 rem;
+  color: #575656;
+}
+/*Cambio de color  las letras cuando (a) cuando pasan sobre ellas o seleccionarlas*/
+.navegacion a:hover {
+    color: #ffcada;
+    font-size: 15px;
+}
+
+.navegacion button {
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  width: 50px;
+}
+
+.navegacion ul {
+  text-align: center;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  transform: scale(0);
+  transform-origin: top;
+  transition: transform 0.5s ease;
+}
+
+.navegacion--activa ul {
+  height: auto;
+  transform: scale(1);
+}
+
+.navegacion ul li {
+  display: block;
+  padding: 14px;
+  text-align: center;
+  
+}
+.navegacion img{
+ width: 15px;
+ height: 15px;
+}
+.titulo1{
+  margin: 50px 0px 0px 0px;
+
+
+
+}
+.titulo1 h2{
+  font-family: "Lucida console";
+  text-align: center;
+  font-size: 25px;
+  padding: 0px;
+}
+  .titulo1 p{
+    font-family: "Monaco";
+    text-align: center;
+    font-size: 20px;
+  
+} 
+/**Sección bienvenida**/
+#seccion1{
+  width: auto;
+  height: 350px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.007)), 
+  url("../img/foto10.jpg");
+  margin-top: 5%;
+  background-size: cover;
+  background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+/**Fin de la sección de bienvenida**/
+
+
+ /*contenedor 1 para coleccion de imagenes*/
+ .titulo1 p{
+  width: 400px;
+  text-align: center;
+  margin: auto;
+  border-bottom: 2px solid  #ffcada;
+ }
+  .contenedor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:14px;
+    margin: 10px 0px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contenedor .imagenes {
+    background-color: #fff;
+    width: 300px;
+    height: 350px;
+    margin: 15px 15px;
+    border-radius: 8px;
+    box-shadow: 1px 3px 3px #fde1de;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.25s;
+  }
+  .contenedor .imagenes:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 2px 2px rgb(95, 95, 95);
+  }
+  .contenedor .imagenes img {
+    width: 200px;
+    height: 250px;
+  }
+  .contenedor .imagenes a {
+    font-weight: bold;
+    text-decoration:dashed;
+    color:black;
+    font-family: "Lucida console";
+  }
+
+  .contenedor .imagenes p {
+    padding: 0 1rem;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 200;
+    
+    
+  }
+  /**Aquí termina el contenedor colecciones**/
+
+
+  /**Inicia otro contenedor los más vendidos**/
+  .seccion3{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 55px 1px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .seccion3 h1{
+    font-family: "Lucida console";
+    font-size: 1.8em;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+   border-bottom: 2px solid  #ffcada;
+  }
+  .seccion3 p{
+    font-family: "Lucida console";
+    font-size: 30px;
+    text-align: center;
+  }
+  /*Este contenedor es en general para agrupar las imagenes*/
+
+  .seccion3 .seccion3-2{
+    flex-wrap: wrap;
+    display: flex;
+    gap:10px;
+    margin: 10px 0px 15px;
+    text-align: center;
+    justify-content: center;
+  }
+  /*Esta secciíon contiene la imagenes  definiendotamaño y color de ellas */
+  .seccion3 .seccion3-1 {
+    border-radius: 8px;
+    width: 290px;
+    height: 340px;
+    background-color: #fff;
+    border: solid 1px #fde0e6;
+    box-shadow: #bebebe 1px 2px 16px;
+   
+    
+  }
+  .seccion3 .seccion3-1 a{
+
+    color: #ee98a9;
+    cursor: pointer;
+    transition: background-color 0.5s linear, color 0.5s ease-out, transform 0.3s ease-out;
+  }
+  .seccion3 .seccion3-1 a:hover{
+  
+    color: rgb(165, 161, 161);
+  }
+  .seccion3 .seccion3-1 img{
+    width: 240px;
+    height: 300px;
+    object-fit: cover;
+    background-position: center;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition:all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+
+  }
+
+  .seccion3 .seccion3-1 img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1); /* IE 9 */ 
+    transform: scale(1.1);
+
+  }
+  footer{
+    padding:1em 15%;
+
+    background-color:#ee98a9;
+    text-align:center;
+    color:rgba(255,255,255,0.7);
+    font-size:12px;
+  }
+  
+  /**Fin de la secci+on 3 y 3.1**/
+  @media (min-width: 800px) {
+    .main {
+      margin: 14px;
+    }
+  
+    .navegacion button {
+      display: none;
+    }
+  
+    .navegacion ul {
+      display: block;
+      height: auto;
+      transform: none;
+    }
+  
+    .navegacion ul li {
+      display: inline-block;
+    }
+  }
