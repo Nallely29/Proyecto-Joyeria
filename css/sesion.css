@@ -178,10 +178,10 @@ h2{
     font-weight: 600;
 }
 
-a{
+.grupo a{
   color: #c36c6c;
 }
- a:hover {
+.grupo a:hover {
   color: #adabab;
   font-size: 15px;
 }
